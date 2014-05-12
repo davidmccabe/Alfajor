@@ -90,6 +90,9 @@ class Selenium(DOMMixin):
         self.sync_document()
         after_page_load.send(self, url=url)
 
+    def refresh(self):
+        self.open(self.location)
+
     @property
     def backend(self):
         return self.selenium

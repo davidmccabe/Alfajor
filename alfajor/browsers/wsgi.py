@@ -92,6 +92,9 @@ class WSGI(DOMMixin):
         """Open web page at *url*."""
         self._open(url, refer=False)
 
+    def refresh(self):
+        self.open(self.location)
+
     def reset(self):
         self._cookie_jar = CookieJar()
 

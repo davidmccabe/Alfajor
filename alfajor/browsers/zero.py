@@ -50,6 +50,9 @@ class Zero(DOMMixin):
     def open(self, url, wait_for=None, timeout=0):
         """Navigate to *url*."""
 
+    def refresh(self):
+        """Refresh/reload the currently open page, waiting until loaded."""
+
     def reset(self):
         """Reset browser state (clear cookies, etc.)"""
 
